@@ -1,0 +1,10 @@
+[modern]
+last 1 chrome version
+last 1 firefox version
+
+[production]
+> 1%
+ie 11
+# >1%  or ie 11 
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body.css">
+    <script defer src="https://appsforoffice.microsoft.com/lib/beta/hosted/office.js"> </script>
+    <title>Document</title>
+  <script defer src="index.js"></script><link href="css/index.css" rel="stylesheet"></head>
+  <body> 
+<div class="header">
+  <div>
+    <div class="toggler active" data-configtype="Source">Source</div>
+    <div class="toggler active" data-configtype="TransForm">TransForm</div>
+    <div class="toggler active" data-configtype="Visualize">Visualize</div>
+  </div>
+  <div class="expand"></div>
+  <div><a class="option" href="/"><img class="icon" src="pic/home.png" alt="home"></a><a class="option" href="javascript:void"><img class="icon" src="pic/dashboard.png" alt="dashboard"></a><a class="option" href="javascript:void"><img class="icon" src="pic/setting.png" alt="setting"></a><a class="option" href="javascript:void"><img class="icon" src="pic/menu.png" alt="others"></a>
+  </div>
+</div>
+<div class="body">
+  <div class="config block active" data-configtype="Source">
+    <div class="blockHeader"><span>Source</span><img class="run" src="pic/start.png"></div>
+    <div id="sourceRoot"></div>
+    <div class="resizer"></div>
+  </div>
+  <div class="config block active" data-configtype="TransForm">
+    <div class="blockHeader"><span>TransForm</span><img class="run" src="pic/start.png"></div>
+    <div id="transformRoot"></div>
+    <div class="resizer"></div>
+  </div>
+  <div class="config block active" data-configtype="Visualize">
+    <div class="blockHeader"><span>Visualize</span><img class="run" src="pic/start.png"></div>
+    <div id="visualizeRoot"></div>
+    <div class="resizer"></div>
+  </div>
+  <div class="output block">
+    <div class="output blockHeader">output</div>
+  </div>
+</div>
+  </body>
+</html>

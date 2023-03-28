@@ -1,0 +1,93 @@
+.body{
+    height:calc(100vh - var(--header-height));
+    width:100%;
+    display:flex;
+
+}
+
+.block{
+    padding: 0;
+    background-color: white;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    position: relative;
+    border:1px solid black;
+    margin-right: 2px;
+    overflow: hidden;
+
+}
+
+.block.config{
+        display:none;
+    }
+
+.block.config.active{
+            display:flex;
+        }
+
+.block.output{
+        flex:2;
+        margin-right:0px;
+    }
+
+
+.blockHeader{
+    width: 100%;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: #c7ecee;
+}
+
+
+.blockHeader.output{
+        font-size:16px;
+    }
+
+
+.blockHeader >.run{
+        width:18px;
+        float:right;
+        cursor:pointer;
+        padding:3px 6px 3px 3px
+    }
+
+
+.resizer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    /* margin-right: -10px; */
+    width: 16px;
+    height: 100%;
+    opacity: 1;
+    
+}
+
+
+.resizer:hover{
+        cursor: col-resize;
+    }
+
+
+.clickEffect{
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.clickEffect:hover{
+        background-color: rgb(155, 151, 151);
+    }
+
+
+.clickEffect:active{
+        background-color: inherit;
+    }
+
+

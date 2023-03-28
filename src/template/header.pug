@@ -1,0 +1,22 @@
+-
+    let configBlocks = require("./js/configBlock.json")
+
+    const operationOptions=[
+        {name:"home",icon:require("../asset/home.png"),url:"/"},
+        {name:"dashboard",icon:require("../asset/dashboard.png"),url:"javascript:void"},
+        {name:"setting",icon:require("../asset/setting.png"),url:"javascript:void"},
+        {name:"others",icon:require("../asset/menu.png"),url:"javascript:void"},
+    ]
+
+div.header
+    div
+        each toggler in configBlocks
+            div(class="toggler active",data-configtype=toggler.name)= toggler.name
+    div.expand
+    div
+        each option in operationOptions 
+            a(class="option",href=option.url)
+                img(class="icon",src=option.icon ,alt=option.name)
+
+
+

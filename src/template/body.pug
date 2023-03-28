@@ -1,0 +1,16 @@
+-
+    let configs = require("./js/configBlock.json")
+
+
+div.body
+    each config in configs
+        div(class="config block active" data-configtype=config.name)
+            div.blockHeader
+                span= config.name
+                img.run(src=require("../asset/start.png"))
+            div(class=`${config.name.toLowerCase()} root`)
+            div.resizer
+
+    div(class="output block")
+        div(class="output blockHeader")= "output"
+        div(class=`output root`)

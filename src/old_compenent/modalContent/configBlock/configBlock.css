@@ -1,0 +1,203 @@
+.block{
+    padding: 0;
+    background-color: white;
+    /* flex-shrink: 1; 設置Shrink不影響js設置width,但此處不想用此效果*/
+    /* flex-grow:1;  設置flex-grow將無法用js調整style.width*/
+    min-width: 145px;
+    /* max-width: 33%; */
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    position: relative;
+    border:1px solid black;
+    margin-right: 3px;
+    overflow: hidden;
+}
+
+.block:last-child{
+    margin-right: 0px;
+}
+
+.blockHeader{
+    width: 100%;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: #c7ecee;
+}
+
+.resizer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    /* margin-right: -10px; */
+    width: 16px;
+    height: 100%;
+    opacity: 1;
+    
+}
+
+.resizer:hover{
+    cursor: col-resize;
+}
+.clickEffect{
+    cursor: pointer;
+    display: inline-block;
+}
+.clickEffect:hover{
+    background-color: rgb(155, 151, 151);
+}
+
+.clickEffect:active{
+    background-color: inherit;
+}
+
+.deleteItem{
+    position: absolute;
+    padding: 0px 3px;
+    vertical-align: middle;
+    margin-top: -2px;
+    height: 100%;
+    border-radius: 0px 3px 3px 0px;
+    background-color: inherit;
+}
+
+.formArea{
+    display: block;
+    text-align: left;
+    width: 98%;
+    margin: auto;
+}
+
+.configItem{
+    background-color: #dfe6e9;
+    display:inline-block;
+    padding:2px;
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin:3px 23px 0 0 ;
+    line-height: 20px;
+    position: relative;
+}
+
+.configItem:hover{
+    background-color: #c8cdcf;
+    cursor: pointer;
+}
+
+.select{
+    cursor:pointer;
+    border-radius: 2px;
+    height:30px;
+}
+
+.producerSelect{
+    composes:select;
+    width:100%;
+    
+}
+
+.configEditor{
+    /* border:1px solid black; */
+    border-radius:5px;
+    width:95%;
+    margin:20px auto 0 auto;
+    padding:5px;
+    /* max-height:80%;
+    height:430px; */
+    overflow-y:auto;
+    flex:1
+}
+
+.editorHead{
+    text-align: right;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -30px;
+    width: 97%;
+}
+
+textarea{
+    width:98%;
+    min-height: 70px;
+    resize: vertical;
+}
+
+input{
+    max-width: 100%;
+}
+
+::placeholder {
+    color: #686de0;
+
+}
+
+input:-ms-input-placeholder{
+    color: #686de0;
+}
+
+
+.pseudoButton{
+    background-color: #eff4f7;
+    display: inline-block;
+    padding:3px 7px;
+    cursor: pointer;
+    border-radius: 3px;
+    border:1px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.pseudoButton:hover{
+    background-color: #dfe6e9;
+}
+
+.pseudoButton::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width:40%;
+    display: inline-block;
+    transform: skewX(-45deg) translateX(-50px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.pseudoButton:hover::before {
+    transform: skewX(-45deg) translateX(300px);
+    transition: all 0.7s ease-in-out ;
+}
+
+
+.shine{
+    overflow: hidden;
+    position: relative;
+}
+
+.shine::before{
+    content: "";
+    position: absolute;
+    height: 130%;
+    width:40%;
+    display: inline-block;
+    -ms-transform: skewX(-9deg) translateX(-7px);
+    transform: skewX(-9deg) translateX(-7px);
+    background-color: rgba(255, 255, 255, 0.8);
+    /* ie 無法接受 #ffffff80的形式 */
+    animation-name: shine;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+}
+
+@keyframes shine{
+    0%{transform: skewX(-9deg) translateX(-7px);}
+    100%{transform: skewX(-9deg) translateX(20px);}
+}

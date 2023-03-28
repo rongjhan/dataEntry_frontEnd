@@ -1,0 +1,51 @@
+.editor{
+    overflow:hidden;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.editorHead{
+    text-align: right;
+    >.action{
+        margin-right: 8px;
+        cursor: pointer;
+        >img{
+            width: 20px;
+        }
+    }
+}
+
+:global(.editForm){
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 8px;
+}
+
+
+.shine{
+    overflow: hidden;
+    position: relative;
+}
+
+.shine::before{
+    content: "";
+    position: absolute;
+    height: 130%;
+    width:40%;
+    display: inline-block;
+    -ms-transform: skewX(-9deg) translateX(-7px);
+    transform: skewX(-9deg) translateX(-7px);
+    background-color: rgba(255, 255, 255, 0.8);
+    /* ie 無法接受 #ffffff80的形式 */
+    animation-name: shine;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+}
+
+@keyframes shine{
+    0%{transform: skewX(-9deg) translateX(-7px);}
+    100%{transform: skewX(-9deg) translateX(20px);}
+}

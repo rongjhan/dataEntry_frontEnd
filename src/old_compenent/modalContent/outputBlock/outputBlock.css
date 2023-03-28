@@ -1,0 +1,133 @@
+.block{
+    flex:2;
+    height:100%;
+    /* background-color: #c7ecee; */
+    border:1px solid black;
+    margin-right: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* min-width: 120px; */
+    /* min-width: 363px; */
+}
+
+.block:last-child{
+    margin-right: 0px;
+}
+
+.menu{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 5px 5px;
+    min-width:110px;
+    border-left: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    
+    /* pointer-events: none; */
+    /* background-color: #dcdde1; */
+
+}
+
+.spanIcon{
+    /* transform: rotateZ(90deg); */
+    width: 8px;
+}
+
+.menuSpan{
+    padding: 0px 6px;
+    border-radius: 2px;
+    margin-left: 5px;
+    float: right;
+    /* pointer-events: none; */
+}
+
+.menuSpan:hover{
+    background-color: #f5f6fa;
+
+}
+
+.menuSpan:active{
+    background-color: inherit;
+}
+
+.listBlock{
+    z-index: 1;
+    position: absolute;
+    top:28px;
+    left: -1px;
+    width: 100%;
+    background-color: #dfe6e9;
+    border:1px solid black;
+    border-radius: 1px;
+    max-height: 300px;
+    overflow-y:auto ;
+}
+
+.listBlock::-webkit-scrollbar {
+    width: 0px;
+}
+
+.list{
+    width:100%;
+    list-style-type:none;
+    height: 28px;
+    line-height: 28px;
+    background-color: inherit;
+    vertical-align: middle;
+    border-bottom:1px solid black;
+    text-align: center;
+    
+}
+
+.list:last-child{
+    border: none;
+}
+.list:hover{
+    background-color: #b2bec3;
+}
+
+
+.item{
+    width: 98%;
+    /* height: 478px; */
+    height: 95%;
+    margin: 12px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow-y:auto ;
+    user-select: none;
+    -ms-user-select: none;
+}
+
+
+.wheel{
+    background-color: rgba(231, 236, 238, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* right:0; */
+    opacity: 0.8;
+    width: 30px;
+    cursor: ns-resize;
+    opacity: 0;
+}
+
+.wheel:hover{
+    opacity:0.8
+}
+
+.wheelButton{
+    width: 20px;
+    margin: 5px auto;
+    cursor:pointer;
+    padding: 2px 3px;
+    border-radius: 2px;
+}
+
+.wheelButton:hover{
+    background-color: #ffffff;
+}

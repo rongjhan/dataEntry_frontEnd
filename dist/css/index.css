@@ -1,0 +1,168 @@
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/postcss-loader/dist/cjs.js!./src/component/css/configFolder.css ***!
+  \**************************************************************************************************************************************************************/
+.configFolder_folder--Nt8Es{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 92%;
+    margin: 10px auto;
+    padding: 5px;
+    max-height:120px ;
+    overflow:auto;
+}
+
+.configFolder_folder--Nt8Es >div{
+        display: block;
+        text-align: left;
+        width: 98%;
+        margin: auto;
+    }
+
+.configFolder_folder--Nt8Es >div.configFolder_header--VfiTJ{
+            margin:5px 0;
+            display: flex;
+        }
+
+.configFolder_folder--Nt8Es >div.configFolder_content--HdHft{
+            font-szie: 20px; 
+            font-weight: bold; 
+            text-align: left; 
+            padding-left: 3px 
+        }
+
+.configFolder_add--TyTeC{
+    background-color: #eff4f7;
+    display: inline-block;
+    padding:3px 7px;
+    cursor: pointer;
+    border-radius: 3px;
+    border:1px solid black;
+    overflow: hidden;
+    position: relative;
+    align-self:center;
+}
+
+.configFolder_add--TyTeC:hover{
+        background-color:rgb(231 231 231);
+    }
+
+.configFolder_add--TyTeC:active{
+        background-color: #eff4f7;
+    }
+
+.configFolder_configFile--jzhil{
+    background-color: #dfe6e9;
+    display:inline-block;
+    padding:2px;
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin:3px 23px 0 0 ;
+    line-height: 20px;
+    position: relative;
+}
+
+.configFolder_configFile--jzhil:hover{
+        background-color: #c8cdcf;
+        cursor: pointer;
+    }
+
+
+.configFolder_delete--WnWxU{
+    position: absolute;
+    padding: 0px 3px;
+    vertical-align: middle;
+    margin-top: -2px;
+    height: 100%;
+    border-radius: 0px 3px 3px 0px;
+    background-color: inherit;
+}
+
+
+.configFolder_delete--WnWxU >img{
+        width:12px;
+        marginTop:5px
+    }
+
+
+
+
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/postcss-loader/dist/cjs.js!./src/component/css/configEditor.css ***!
+  \**************************************************************************************************************************************************************/
+.configEditor_select--ACgMY{
+    cursor:pointer;
+    border-radius: 2px;
+    height:30px;
+}
+
+.configEditor_producerSelect--YA6rn{
+    width:100%;
+    
+}
+
+.configEditor_configEditor--Rp2y6{
+    /* border:1px solid black; */
+    border-radius:5px;
+    width:95%;
+    margin:20px auto 0 auto;
+    padding:5px;
+    /* max-height:80%;
+    height:430px; */
+    overflow-y:auto;
+    flex:1
+}
+
+.configEditor_editorHead--tfOJu{
+    text-align: right;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 97%;
+}
+
+textarea{
+    width:98%;
+    min-height: 70px;
+    resize: vertical;
+}
+
+input{
+    max-width: 100%;
+}
+
+::placeholder {
+    color: #686de0;
+
+}
+
+input:-ms-input-placeholder{
+    color: #686de0;
+}
+
+
+.configEditor_shine--_kFpm{
+    overflow: hidden;
+    position: relative;
+}
+
+.configEditor_shine--_kFpm::before{
+    content: "";
+    position: absolute;
+    height: 130%;
+    width:40%;
+    display: inline-block;
+    transform: skewX(-9deg) translateX(-7px);
+    background-color: rgba(255, 255, 255, 0.8);
+    /* ie 無法接受 #ffffff80的形式 */
+    animation-name: configEditor_shine--_kFpm;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+}
+
+@keyframes configEditor_shine--_kFpm{
+    0%{transform: skewX(-9deg) translateX(-7px);}
+    100%{transform: skewX(-9deg) translateX(20px);}
+}
+

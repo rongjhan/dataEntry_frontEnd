@@ -1,0 +1,82 @@
+.folder{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    max-height:120px ;
+    overflow:auto;
+
+    >div{
+        display: block;
+        text-align: left;
+        width: 98%;
+        margin: auto;
+        &.header{
+            margin:5px 0;
+            display: flex;
+        }
+
+        &.content{
+            font-szie: 20px; 
+            font-weight: bold; 
+            text-align: left; 
+            padding-left: 3px 
+        }
+    }
+}
+
+.add{
+    background-color: #eff4f7;
+    display: inline-block;
+    padding:3px 7px;
+    cursor: pointer;
+    border-radius: 3px;
+    border:1px solid black;
+    overflow: hidden;
+    position: relative;
+    align-self:center;
+    
+    &:hover{
+        background-color:rgb(231 231 231);
+    }
+
+    &:active{
+        background-color: #eff4f7;
+    }
+}
+
+.configFile{
+    background-color: #dfe6e9;
+    display:inline-block;
+    padding:2px;
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin:3px 23px 0 0 ;
+    line-height: 20px;
+    position: relative;
+
+    &:hover{
+        background-color: #c8cdcf;
+        cursor: pointer;
+    }
+}
+
+
+.delete{
+    position: absolute;
+    padding: 0px 3px;
+    vertical-align: middle;
+    margin-top: -2px;
+    height: 100%;
+    border-radius: 0px 3px 3px 0px;
+    background-color: inherit;
+
+    >img{
+        width:12px;
+        margin-top:5px
+    }
+}
+
+
+

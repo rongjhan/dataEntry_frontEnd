@@ -1,0 +1,37 @@
+@import url("./projectConfModal/modal.css");
+* {
+
+    -ms-overflow-style:-ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar{
+        width: 6px;   /*set vertical scrollbar width*/
+        height: 6px; /*set horizon scrollbar height*/
+        &:hover{
+            width: 12px;
+            height: 12px; 
+        }
+    }
+
+    &::-webkit-scrollbar-track{
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: #b2bec3;
+        border-radius: 20px;
+    }
+
+}
+
+
+
+
+#root{
+    overflow: hidden;
+    background-image: url("../_asset/Close.png");
+    width: 600px;
+    height: 600px;
+}
+
+
+/* html{overflow: hidden;} */

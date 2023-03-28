@@ -1,0 +1,42 @@
+.outputContent{
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.outputList{
+    overflow-y: hidden;
+    height: 100%;
+    vertical-align: middle;
+    display: none;
+    
+    &.show{
+        display: block
+    }
+    
+}
+
+
+.configOutput{
+    width: 98%;
+    /* height: 478px; */
+    height: calc(100% - 24px);
+    margin: 12px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow-y:auto ;
+    user-select: none;
+    display: none;
+    text-align: center;
+    -ms-user-select: none;
+
+    &.unExecute{
+        border:2px dashed #e17055
+    }
+
+    &.show{
+        display: flow-root;
+    }
+}
+
+

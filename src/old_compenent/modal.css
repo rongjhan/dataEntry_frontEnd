@@ -1,0 +1,28 @@
+.modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.modalContent {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    min-height: 400px;
+    /* height: calc(100% - 31px); */
+    width: 100%;
+}
+
